@@ -1,15 +1,15 @@
 /*
-    í™ì •ëª¨ ì—°êµ¬ì†Œ https://honglab.co.kr/
+    È«Á¤¸ğ ¿¬±¸¼Ò https://honglab.co.kr/
 */
 
 #include <iostream>
-#include <random> // ë‚œìˆ˜ ìƒì„±
+#include <random> // ³­¼ö »ı¼º
 
 using namespace std;
 
 int main()
 {
-    // ë‚œìˆ˜ ìƒì„±
+    // ³­¼ö »ı¼º
     // https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -17,24 +17,28 @@ int main()
 
     int number = distrib(gen);
 
-    while (1) // true ëŒ€ì‹  ìˆ«ì 1ë¡œ ë¬´í•œ ë°˜ë³µë„ ë§ì´ ì‚¬ìš©í•©ë‹ˆë‹¤.
+    while (1) // true ´ë½Å ¼ıÀÚ 1·Î ¹«ÇÑ ¹İº¹µµ ¸¹ÀÌ »ç¿ëÇÕ´Ï´Ù.
     {
         int guess;
-        cout << "ì…ë ¥: ";
+        cout << "ÀÔ·Â: ";
         cin >> guess;
 
-        /*if ()
+        if (guess == number)
         {
+            cout << guess << " Á¤´ä!" << endl;
+            break;
         }
-        else if ()
+        else if (guess > number)
         {
+            cout << "³Ê¹« Ä¿¿ä!" << endl;
         }
         else
         {
-        }*/
+            cout << "³Ê¹« ÀÛ¾Æ¿ä!" << endl;
+        }
     }
 
-    // ë³´ì¶©: í•˜ë‚˜ì”© ë‹¤ ë¹„êµí•˜ëŠ” ë°©ë²•ê³¼ ì´ì§„ íƒìƒ‰ ë¹„êµ
+    // º¸Ãæ: ÇÏ³ª¾¿ ´Ù ºñ±³ÇÏ´Â ¹æ¹ı°ú ÀÌÁø Å½»ö ºñ±³
 
     return 0;
 }
