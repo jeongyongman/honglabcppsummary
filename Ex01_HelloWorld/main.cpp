@@ -1,19 +1,19 @@
 /*
-    í™ì •ëª¨ ì—°êµ¬ì†Œ https://honglab.co.kr/
+    È«Á¤¸ğ ¿¬±¸¼Ò https://honglab.co.kr/
 */
 
-#include <iostream> // iostreamì´ë¼ëŠ” í—¤ë”ë¥¼ í¬í•¨(include)
+#include <iostream> // iostreamÀÌ¶ó´Â Çì´õ¸¦ Æ÷ÇÔ(include)
 
-using namespace std; // ë„¤ì„ìŠ¤í˜ì´ìŠ¤ ì„¤ëª… std::cout
+using namespace std; // ³×ÀÓ½ºÆäÀÌ½º ¼³¸í std::cout
 
 int main() // entry point
 {
-    // ì£¼ì„(comment) ë‹¤ëŠ” ë°©ë²•
+    // ÁÖ¼®(comment) ´Ù´Â ¹æ¹ı
 
-    cout << "Hello, World!" << endl;
+    cout << "Hello, World!Çàº¹" << endl;
     // printf("Hello World!!! by printf");
 
-    // ì…ì¶œë ¥ì— ëŒ€í•´ì„œëŠ” ë’¤ì— ë‹¤ì‹œ ë‚˜ì™€ìš”.
+    // ÀÔÃâ·Â¿¡ ´ëÇØ¼­´Â µÚ¿¡ ´Ù½Ã ³ª¿Í¿ä.
     char user_input[100];
     cin >> user_input;
     cout << user_input;
