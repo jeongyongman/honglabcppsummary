@@ -87,12 +87,13 @@ public:
         int old_size = size_;
 
         // 다른 멤버 함수 호출 가능
-        // Resize(...);
+        Resize(size_ + app_str->size_); // Resize(...);
 
         // 중요한 개념
         for (int i = old_size; i < size_; i++)
         {
-            // TODO: 복사
+            cout << i << " " << i - old_size << endl;
+            str_[i] = app_str->str_[i - old_size]; // TODO: 복사
         }
     }
 
@@ -108,9 +109,18 @@ int main()
     MyString str1("ABCDE"); // 생성자 이용
     MyString str2("123");
 
+    str1.Print();
+
     str1.Append(&str2); // 주소 넣어줌
 
+    exit(-1); // 임시로 종료시킴
+
     str1.Print();
+
+    MyString str3("Hello, World");
+
+    str3.Append(&str1);
+    str3.Print();
 
     return 0;
 }
