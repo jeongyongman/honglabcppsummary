@@ -1,5 +1,5 @@
 /*
-    í™ì •ëª¨ ì—°êµ¬ì†Œ https://honglab.co.kr/
+    È«Á¤¸ğ ¿¬±¸¼Ò https://honglab.co.kr/
 */
 
 #include <iostream>
@@ -9,18 +9,18 @@ using namespace std;
 
 int main()
 {
-    // íŒŒì¼ ì¶œë ¥
-    /*{
+    // ÆÄÀÏ Ãâ·Â
+    {
         ofstream ofile;
 
         ofile.open("my_contacts.txt");
-        ofile << "ì•ˆë…•í•˜ì„¸ìš”? ë°˜ê°‘ìŠµë‹ˆë‹¤.\n";
-        ofile << "ë‘ ë²ˆì§¸ ì¤„ì…ë‹ˆë‹¤.\n";
-        ofile << "ì„¸ ë²ˆì§¸ ì¤„ì…ë‹ˆë‹¤.\n";
+        ofile << "¾È³çÇÏ¼¼¿ä? ¹İ°©½À´Ï´Ù.\n";
+        ofile << "µÎ ¹øÂ° ÁÙÀÔ´Ï´Ù.\n";
+        ofile << "¼¼ ¹øÂ° ÁÙÀÔ´Ï´Ù.\n";
         ofile.close();
-    }*/
+    }
 
-    // íŒŒì¼ ì…ë ¥
+    // ÆÄÀÏ ÀÔ·Â
     {
         char line[100];
 
